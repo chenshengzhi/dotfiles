@@ -1,0 +1,64 @@
+#!/bin/bash
+
+########### 要安装的URL列表############
+plugins=(\
+ 'https://github.com/onevcat/VVDocumenter-Xcode' \
+	'https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin' \
+	 'https://github.com/markohlebar/Peckham' \
+	   'https://github.com/trawor/XToDo' \
+	    'https://github.com/omz/ColorSense-for-Xcode' \
+	    'https://github.com/dhcdht/DXXcodeConsoleUnicodePlugin' \
+	    'https://github.com/nanaimostudio/Xcode-Quick-Localization' \
+        'https://github.com/ksuther/KSImageNamed-Xcode' \
+         )
+
+cd
+home=`pwd`
+pathToInstall=$home'/Documents/xcodePlugins'
+
+########### 函数 ##############
+function pullAndbuildPlugin() {
+	echo ''
+	echo $1
+	cd $1
+	oldCommit=`cat .git/ORIG_HEAD`
+	git pull
+	newCommit=`cat .git/ORIG_HEAD`
+	if [[ $oldCommit == $newCommit ]]; then
+		return
+	fi
+
+	xcodeprojs=$1/*.xcodeproj
+	for xcodeproj in $xcodeprojs; do
+		if [[ -d $xcodeproj ]]; then
+			echo $xcodeproj
+			xcodebuild -project $xcodeproj
+		fi
+	done
+	xcworkspaces=$1/*.xcworkspace
+	for xcworkspace in $xcworkspaces; do
+		if [[ -d $xcworkspace ]]; then
+			echo $xcworkspace
+			xcodebuild -project $xcworkspace
+		fi
+	done
+}
+
+########## 下载并安装 ###############
+if [[ ! -d $pathToInstall ]]; then
+	mkdir -p $pathToInstall
+fi
+
+for plugin in ${plugins[@]}; do
+	cd $pathToInstall
+	name=${plugin##*/}
+	fullPath=${pathToInstall}/${name}
+	if [[ ! -d $fullPath ]]; then
+		git clone ${plugin}'.git' $name
+	fi
+	if [[ ! -d ${fullPath}/'.git' ]]; then
+		rm -rf ${fullPath}
+		git clone ${plugin}'.git' $name
+	fi
+	pullAndbuildPlugin $fullPath
+done

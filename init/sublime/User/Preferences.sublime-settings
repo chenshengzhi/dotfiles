@@ -1,0 +1,19 @@
+{
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/User/SublimeLinter/Slush & Poppies (SL).tmTheme",
+	"create_window_at_startup": true,
+	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
+	"font_size": 14,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"save_on_focus_lost": true,
+	"show_encoding": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}

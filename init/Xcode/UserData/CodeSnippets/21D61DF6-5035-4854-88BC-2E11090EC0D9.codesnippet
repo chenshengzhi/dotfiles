@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>deal</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/*
+ *	使用arc的控制器中,用于释放外部初始化的指针,避免2次strong指向导致内存不能释放
+ *  非arc的控制器需要释放所有指针,且需要在最后调用父类同名方法:[super dealloc];
+ */
+- (void)dealloc
+{
+    DDLogInfo(@"dealloc");
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>21D61DF6-5035-4854-88BC-2E11090EC0D9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>控制器释放测试</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>控制器释放测试</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
