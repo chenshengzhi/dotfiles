@@ -14,5 +14,5 @@
 8. https://pqrs.org/osx/karabiner/ 
 
 ```
-git clone https://github.com/chenshengzhi/SZDotfiles.git && cd SZDotfiles && source install.sh && cd ..
+git clone https://github.com/chenshengzhi/dotfiles.git && cd dotfiles && source install.sh && cd ..
 ```
