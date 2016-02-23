@@ -26,12 +26,12 @@ rm -rf ./init/Xcode
 mkdir -p ./init/Xcode
 cp -R ~/Library/Developer/Xcode/UserData ./init/Xcode/UserData
 
-git diff
+git add .
+git status
 
 echo  "press enter key to continue"
 read
 
-git add .
 git commit -m "`date`"
 
 git push origin master
