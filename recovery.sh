@@ -6,12 +6,9 @@ cp init/.lldbinit ~/.lldbinit
 cp init/.vimrc ~/.vimrc
 cp init/.vimrc.bundles ~/.vimrc.bundles
 cp init/.zshrc ~/.zshrc
+cp init/.ycm_extra_conf.py ~/
 
-if [ -f /usr/local/bin/vim ];then
-	brew install vim
-fi
-
-if [ -f /usr/local/bin/ctags ];then
+if [ ! -f /usr/local/bin/ctags ];then
 	brew install ctags
 fi
 
@@ -19,7 +16,7 @@ if [[ `which cmake` != *cmake ]];then
 	brew install cmake
 fi
 
-if [ -d ~/.vim/bundle/Vundle.vim ];then
+if [ ! -d ~/.vim/bundle/Vundle.vim ];then
 	mkdir -p ~/.vim/bundle
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	vim +PluginInstall +qall

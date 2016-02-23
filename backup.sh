@@ -6,6 +6,7 @@ cp ~/.zshrc ./init/
 cp ~/.lldbinit ./init/
 cp ~/.vimrc ./init/
 cp ~/.vimrc.bundles ./init/
+cp ~/.ycm_extra_conf.py ./init/
 
 cp ~/Library/Preferences/com.googlecode.iterm2.plist ./init/
 
