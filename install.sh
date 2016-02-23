@@ -48,11 +48,15 @@ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr
 killall Dock
 killall Finder
 
+# MacVim should be installed
+cp ./init/mvim /usr/local/bin/
+sudo ln -s /usr/local/bin/mvim /usr/local/bin/vim
+
 # iterm should be installed
 # open init/honukai.itermcolors
 mkdir -p ~/Library/Fonts
 cp init/MonacoForPowerline.otf ~/Library/Fonts/
-defaults import com.googlecode.iterm2 init/com.googlecode.iterm2.plist
+defaults import com.googlecode.iterm2 ./init/com.googlecode.iterm2.plist
 
 if [[ `which brew` != *brew ]];then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
