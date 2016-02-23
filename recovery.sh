@@ -2,8 +2,10 @@
 
 git_pull_log=`git pull`
 
-if [ ${git_pull_log} == "Already up-to-date." ]
-	return
+if [ "${git_pull_log}" == "Already up-to-date." ]
+then
+	echo ${git_pull_log}
+	exit 0
 fi
 
 git show

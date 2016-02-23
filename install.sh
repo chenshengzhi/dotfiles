@@ -53,9 +53,9 @@ cp ./init/mm /usr/local/bin/
 sudo ln -s /usr/local/bin/mm /usr/local/bin/vim
 
 # iterm should be installed
-# open init/honukai.itermcolors
+# open ./init/honukai.itermcolors
 mkdir -p ~/Library/Fonts
-cp init/MonacoForPowerline.otf ~/Library/Fonts/
+cp ./init/MonacoForPowerline.otf ~/Library/Fonts/
 defaults import com.googlecode.iterm2 ./init/com.googlecode.iterm2.plist
 
 if [[ `which brew` != *brew ]];then
@@ -82,8 +82,8 @@ gem sources -r https://rubygems.org/
 gem sources -a https://ruby.taobao.org/
 sudo gem install cocoapods
 
-cp init/checkHosts init/cleanXcodeDeriveData init/clearDNSCache init/hostsInstall init/installUpdateXcodePlugins ~/Desktop
-cp init/com.csz.updateHosts.plist ~/Library/LaunchAgents/
+cp ./init/checkHosts ./init/cleanXcodeDeriveData ./init/clearDNSCache ./init/hostsInstall ./init/installUpdateXcodePlugins ~/Desktop
+cp ./init/com.csz.updateHosts.plist ~/Library/LaunchAgents/
 launchctl load ~/Library/LaucnAgents/com.csz.updateHosts.plist
 
 source ./recovery.sh

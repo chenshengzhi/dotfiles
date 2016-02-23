@@ -3,9 +3,6 @@
 dotfiles_dir=`dirname $0`
 cd $dotfiles_dir
 
-
-git pull
-
 cp ~/.zshrc ./init/
 cp ~/.lldbinit ./init/
 cp ~/.vimrc ./init/
