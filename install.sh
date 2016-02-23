@@ -51,7 +51,7 @@ killall Finder
 # iterm should be installed
 # open init/honukai.itermcolors
 mkdir -p ~/Library/Fonts
-cp init/Meslo\ LG\ M\ Regular\ for\ Powerline.otf ~/Library/Fonts/
+cp init/MesloPowerline.otf ~/Library/Fonts/
 defaults import com.googlecode.iterm2 init/com.googlecode.iterm2.plist
 
 if [[ `which brew` != *brew ]];then
