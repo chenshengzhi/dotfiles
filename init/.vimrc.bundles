@@ -13,13 +13,16 @@ Plugin 'VundleVim/Vundle.vim'
 " ============ plugins begin ==============
 " plugins
 Bundle "scrooloose/nerdtree"
-Bundle 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Bundle 'Valloric/YouCompleteMe'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+if has("gui_running")
+	Bundle 'scrooloose/syntastic'
+	Plugin 'SirVer/ultisnips'
+	Plugin 'honza/vim-snippets'
+endif
+Plugin 'altercation/vim-colors-solarized'
 
 " plugins setting
 
