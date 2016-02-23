@@ -2,6 +2,9 @@
 
 git pull
 
+echo  "press enter key to continue"
+read
+
 cp ./init/.lldbinit ~/
 cp ./init/.vimrc ~/
 cp ./init/.vimrc.bundles ~/

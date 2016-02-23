@@ -27,7 +27,7 @@ mkdir -p ./init/Xcode
 cp -R ~/Library/Developer/Xcode/UserData ./init/Xcode/UserData
 
 git add .
-git status
+git show
 
 echo  "press enter key to continue"
 read
