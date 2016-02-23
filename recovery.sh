@@ -1,9 +1,16 @@
 #!/bin/bash
 
-git pull
+git_pull_log=`git pull`
+
+if [ ${git_pull_log} == "Already up-to-date." ]
+	return
+fi
+
+git show
 
 echo  "press enter key to continue"
 read
+
 
 cp ./init/.lldbinit ~/
 cp ./init/.vimrc ~/
