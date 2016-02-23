@@ -27,11 +27,10 @@ mkdir -p ./init/Xcode
 cp -R ~/Library/Developer/Xcode/UserData ./init/Xcode/UserData
 
 git add .
+git commit -m "`date`"
 git show
 
-echo  "press enter key to continue"
+echo  "press any key to push to remote server"
 read
-
-git commit -m "`date`"
 
 git push origin master
