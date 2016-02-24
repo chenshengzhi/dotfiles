@@ -20,13 +20,6 @@ do
 done	
 ```
 
-#### App
-
-1. http://iterm2.com/
-2. https://central.github.com/mac/latest
-3. git  "install via Github Desktop.app"
-
-
 ## install
 
 1. http://iterm2.com/
