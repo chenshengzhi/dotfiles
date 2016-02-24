@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>logcallstack</string>
+	<string>ksystemfont</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"Call Stack: %@", [NSThread callStackSymbols]);</string>
+	<string>[UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>01FCCCC4-CB98-4B32-BAC4-78F55CEEFB8A</string>
+	<string>E4C2E5F8-AF0F-47DE-A513-98E0B004585E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>call stack symbols</string>
+	<string>system font of size</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>call stack symbols</string>
+	<string>UserSnippet-system font of size</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

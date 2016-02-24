@@ -3,29 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sharedObject</string>
+	<string>kgray</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)shared&lt;#name#&gt; {
-    static &lt;#class#&gt; *_shared&lt;#name#&gt; = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        _shared&lt;#name#&gt; = &lt;#initializer#&gt;;
-    });
-    
-    return _shared&lt;#name#&gt;;
-}</string>
+	<string>[UIColor grayColor]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>77896554-11AB-44DA-800E-063870BA94DB</string>
+	<string>FDF971D7-909B-44C6-B6A7-57C23841121E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>单例</string>
+	<string>color gray</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UserSnippet-单例</string>
+	<string>UserSnippet-color gray</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>fllog</string>
+	<string>kblackcolor</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"%s方法  在%d行  &lt;#formart#&gt;",__func__,__LINE__,&lt;#argument#&gt;);</string>
+	<string>[UIColor blackColor]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B783CB99-83A3-448E-8B4E-D74D8B7EAD00</string>
+	<string>1E03DED3-2622-4027-8D56-0F4ACD5AE99E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>纤细打印</string>
+	<string>color black</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>详细打印</string>
+	<string>UserSnippet-color black</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
