@@ -122,6 +122,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
+alias mm="/usr/local/bin/mvim" 
+
 ######## 环境变量 ########
 export SVN_EDITOR=vim
 export EDITOR='subl -w'

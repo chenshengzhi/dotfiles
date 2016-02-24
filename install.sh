@@ -49,8 +49,8 @@ killall Dock
 killall Finder
 
 # MacVim should be installed
-cp ./init/mm /usr/local/bin/
-sudo ln -s /usr/local/bin/mm /usr/local/bin/vim
+cp ./init/mvim /usr/local/bin/
+sudo ln -s /usr/local/bin/mvim /usr/local/bin/vim
 
 # iterm should be installed
 # open ./init/honukai.itermcolors

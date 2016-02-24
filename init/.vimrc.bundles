@@ -17,6 +17,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'terryma/vim-multiple-cursors'
 if has("gui_running")
 	Bundle 'scrooloose/syntastic'
 	Plugin 'SirVer/ultisnips'
