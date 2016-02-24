@@ -32,11 +32,13 @@ endif
 
 set backspace=indent,eol,start
 
-"set enc=utf-8
+set enc=utf-8
 
 set history=500
 
 set laststatus=2
 
 filetype plugin indent on
+
+hi visual ctermbg=81 ctermfg=255
 
