@@ -12,7 +12,7 @@ cp ~/.ycm_extra_conf.py ./init/
 
 rm -rf ./init/vim/MySnippets
 mkdir -p ./init/vim/MySnippets
-cp -R ~/.vim/MySnippets ./init/vim/MySnippets
+cp -R ~/.vim/MySnippets ./init/vim/
 
 cp ~/Library/Preferences/com.googlecode.iterm2.plist ./init/
 
