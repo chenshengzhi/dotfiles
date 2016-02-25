@@ -110,7 +110,9 @@ alias svngetignore="svn propget svn:ignore"
 
 alias h="history"
 
-alias l="ls -lahT"
+if [ `uname` == 'Darwin' ];then
+	alias l="ls -lahT"
+fi
 
 alias py="python"
 alias p3="python3"
