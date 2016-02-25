@@ -102,7 +102,6 @@ alias pods="pod search"
 alias podi="pod install --no-repo-update"
 alias podu="pod update --no-repo-update"
 
-alias svnup="svn update"
 alias svndel="svn delete"
 alias svncommit="svn commit -m"
 alias svnsetignore="svn propset svn:ignore"
