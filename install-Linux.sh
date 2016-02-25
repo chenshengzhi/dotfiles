@@ -15,8 +15,15 @@ if [ ! -d ~/.oh-my-zsh ];then
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
+
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ];then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-high
+fi
+
+
+if [ `unam` == 'Linux' ];then
+	chsh -s /bin/zsh		
+	'allow-guest=false' >> /etc/lightdm/lightdm.conf
 fi
 
 source ./recovery.sh
