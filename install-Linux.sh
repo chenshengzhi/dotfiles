@@ -7,6 +7,7 @@ sudo apt-get install zsh
 sudo apt-get install git
 sudo apt-get install htop
 sudo apt-get install openssl
+sudo apt-get install vim
 
 if [ ! -d ~/.oh-my-zsh ];then
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
