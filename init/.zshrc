@@ -110,7 +110,7 @@ alias svngetignore="svn propget svn:ignore"
 
 alias h="history"
 
-if [ `uname` == 'Darwin' ];then
+if [ `uname` = 'Darwin' ];then
 	alias l="ls -lahT"
 fi
 
