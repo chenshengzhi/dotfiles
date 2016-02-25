@@ -11,7 +11,7 @@ cp ~/.gvimrc ./init/
 cp ~/.ycm_extra_conf.py ./init/
 
 rm -rf ./init/vim/MySnippets
-cp -R ~/.vim/MySnippets ./init/
+cp -R ~/.vim/MySnippets ./init/vim
 
 cp ~/Library/Preferences/com.googlecode.iterm2.plist ./init/
 

@@ -49,7 +49,7 @@ killall Dock
 killall Finder
 
 # MacVim should be installed
-cp ./init/mvim /usr/local/bin/
+cp ./init/vim/mvim /usr/local/bin/
 sudo ln -s /usr/local/bin/mvim /usr/local/bin/vim
 
 # iterm should be installed
