@@ -23,11 +23,19 @@ cp ./init/.zshrc ~/
 cp ./init/.ycm_extra_conf.py ~/
 
 if [ ! -f /usr/local/bin/ctags ];then
-	brew install ctags
+	if [ `uname` == 'Darwin' ];then
+		brew install ctags
+	elif [ `uname` == 'Linux' ];then
+		sudo apt-get install ctags
+	fi
 fi
 
 if [[ `which cmake` != *cmake ]];then
-	brew install cmake
+    if [ `uname` == 'Darwin' ];then
+        brew install cmake
+    elif [ `uname` == 'Linux' ];then
+        sudo apt-get install cmake
+    fi
 fi
 
 if [ ! -d ~/.vim/bundle/Vundle.vim ];then
