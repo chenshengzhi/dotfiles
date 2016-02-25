@@ -8,6 +8,8 @@ sudo apt-get install git
 sudo apt-get install htop
 sudo apt-get install openssl
 sudo apt-get install vim
+sudo apt-get install cmake
+sudo apt-get install ctags
 
 if [ ! -d ~/.oh-my-zsh ];then
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
