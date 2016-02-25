@@ -39,7 +39,8 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ];then
 fi
 
 rm -rf ~/.vim/MySnippets
-cp -R ./init/vim/MySnippets ~/.vim/MySnippets
+mkdir -p ~/.vim/MySnippets
+cp -R ./init/vim/MySnippets/* ~/.vim/MySnippets/*
 
 if [ `uname` == 'Darwin' ];then
 	defaults import com.googlecode.iterm2 ./init/com.googlecode.iterm2.plist
