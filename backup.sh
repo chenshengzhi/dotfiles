@@ -3,26 +3,47 @@
 dotfiles_dir=`dirname $0`
 cd $dotfiles_dir
 
-cp ~/.zshrc ./init/
-cp ~/.lldbinit ./init/
-cp ~/.vimrc ./init/
-cp ~/.vimrc.bundles ./init/
-cp ~/.gvimrc ./init/
-cp ~/.ycm_extra_conf.py ./init/
+function checkAndCopy()
+{
+    if [ -f $1 ];then
+        cp $1 ./init/
+    fi
+}
 
-rm -rf ./init/vim/MySnippets
-mkdir -p ./init/vim/MySnippets
-cp -R ~/.vim/MySnippets ./init/vim/
+checkAndCopy "~/.zshrc"
+checkAndCopy "~/.lldbinit"
+checkAndCopy "~/.vimrc"
+checkAndCopy "~/.vimrc.bundles" 
+checkAndCopy "~/.gvimrc" 
+checkAndCopy "~/.ycm_extra_conf.py" 
 
-cp ~/Library/Preferences/com.googlecode.iterm2.plist ./init/
+if [ -d ~/.vim/MySnippets ];then
+    rm -rf ./init/vim/MySnippets
+    mkdir -p ./init/vim/MySnippets
+    cp -R ~/.vim/MySnippets ./init/vim/
+fi
 
-rm -rf ./init/sublime
-mkdir -p ./init/sublime
-cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ./init/sublime/
+if [ `uname` == 'Darwin' ];then
+    cp ~/Library/Preferences/com.googlecode.iterm2.plist ./init/
 
-rm -rf ./init/Xcode
-mkdir -p ./init/Xcode
-cp -R ~/Library/Developer/Xcode/UserData ./init/Xcode/UserData
+    if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ];then
+        rm -rf ./init/sublime
+        mkdir -p ./init/sublime
+        cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ./init/sublime/
+    fi
+    
+    rm -rf ./init/Xcode
+    mkdir -p ./init/Xcode
+    cp -R ~/Library/Developer/Xcode/UserData ./init/Xcode/UserData
+elif [ `uname` == 'Linux' ];then 
+   if [ -d .config/sublime-text-3/Packages/User ];then
+        rm -rf ./init/sublime
+        mkdir -p ./init/sublime
+        cp -R .config/sublime-text-3/Packages/User ./init/sublime/
+    fi
+fi
+
+
 
 git add .
 git commit -m "`date`"
@@ -32,3 +53,4 @@ echo  "press any key to push to remote server"
 read
 
 git push origin master
+
