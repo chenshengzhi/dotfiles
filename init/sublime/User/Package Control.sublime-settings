@@ -6,7 +6,6 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
-		"Anaconda",
 		"BinaryPlist",
 		"C Improved",
 		"ConvertChineseCharacters",
@@ -17,6 +16,10 @@
 		"SideBarEnhancements",
 		"SublimeAStyleFormatter",
 		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-cppcheck",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes",
 		"Tag"
 	]
 }

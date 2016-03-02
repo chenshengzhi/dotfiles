@@ -68,6 +68,10 @@ brew install htop
 brew install vim
 brew install cmake
 brew install ctags
+brew install python3
+
+pip3 install pep8
+pip3 install pyflakes
 
 if [ ! -d ~/.oh-my-zsh ];then
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
