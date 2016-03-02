@@ -65,7 +65,6 @@ brew install openssl
 brew install wget
 brew install chisel
 brew install htop
-brew install cheat
 brew install vim
 brew install cmake
 brew install ctags
