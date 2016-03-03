@@ -38,9 +38,11 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ];then
 	vim +PluginInstall +qall
 fi
 
-rm -rf ~/.vim/MySnippets
-mkdir -p ~/.vim/MySnippets
-cp -R ./init/vim/MySnippets/* ~/.vim/MySnippets/*
+if [ `ls ./init/vim/MySnippets/` > 0 ];then
+	rm -rf ~/.vim/MySnippets
+	mkdir -p ~/.vim/MySnippets
+	cp -R ./init/vim/MySnippets/* ~/.vim/MySnippets/*
+fi
 
 if [ `uname` == 'Darwin' ];then
 	defaults import com.googlecode.iterm2 ./init/com.googlecode.iterm2.plist
@@ -59,5 +61,6 @@ if [ `uname` == 'Darwin' ];then
 	cp -R ./init/Xcode/UserData/* ~/Library/Developer/Xcode/UserData/
 fi
 
+zsh
 source ~/.zshrc
 
