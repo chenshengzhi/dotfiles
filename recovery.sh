@@ -38,7 +38,7 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ];then
 	vim +PluginInstall +qall
 fi
 
-if [ `ls ./init/vim/MySnippets/` > 0 ];then
+if [ -d ./init/vim/MySnippets ] && [ `ls ./init/vim/MySnippets/` > 0 ];then
 	rm -rf ~/.vim/MySnippets
 	mkdir -p ~/.vim/MySnippets
 	cp -R ./init/vim/MySnippets/* ~/.vim/MySnippets/*
