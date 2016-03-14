@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"AutoPEP8",
 		"BinaryPlist",
 		"C Improved",
 		"ConvertChineseCharacters",
@@ -20,6 +21,9 @@
 		"SublimeLinter-cppcheck",
 		"SublimeLinter-pep8",
 		"SublimeLinter-pyflakes",
-		"Tag"
+		"SublimeREPL",
+		"SublimeTmpl",
+		"Tag",
+		"Terminal"
 	]
 }
