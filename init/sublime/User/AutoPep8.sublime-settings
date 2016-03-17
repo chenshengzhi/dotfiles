@@ -1,3 +1,5 @@
 {
     "format_on_save": true,
+    "aggressive": 2,
+    "show_output_panel": false,
 }
