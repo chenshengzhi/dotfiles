@@ -6,23 +6,18 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Anaconda",
 		"AutoPEP8",
 		"BinaryPlist",
 		"C Improved",
-		"ConvertChineseCharacters",
 		"DocBlockr",
-		"HTML5",
-		"jQuery",
 		"Package Control",
 		"SideBarEnhancements",
 		"SublimeAStyleFormatter",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-cppcheck",
-		"SublimeLinter-pyflakes",
 		"SublimeREPL",
-		"SublimeTmpl",
-		"Tag",
-		"Terminal"
+		"SublimeTmpl"
 	]
 }
