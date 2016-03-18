@@ -1,6 +1,3 @@
 {
     "getenv_command": ["/bin/zsh", "--login", "-c", "env"],
-    "python_virtualenv_paths": [
-        "~/.virtualenvs",  // virtualenvwrapper
-    ],
 }
