@@ -169,15 +169,15 @@ function upgrade_oh_my_zsh_custom_plugins() {
     pluginsPath=~/.oh-my-zsh/custom/plugins
     builtin cd $pluginsPath
 
-    for plu in ./*; do
+    for plu in *; do
         echo $plu
         if [[ -d $plu ]]; then
-	        builtin cd ${pluginsPath}/${plu}
-
+	        builtin cd ${plu}
 		    if [[ -d ".git" ]]; then
                 git pull
        	    fi
        	fi
+		builtin cd $pluginsPath
     done
 
     builtin cd ${oldPath}
