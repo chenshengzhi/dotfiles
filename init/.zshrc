@@ -108,14 +108,19 @@ alias svnsetignore="svn propset svn:ignore"
 alias svneditignore="svn propedit svn:ignore"
 alias svngetignore="svn propget svn:ignore"
 
+alias gitaddcommitpush="git add . && git commit -m \"`date`\" && git push origin"
+
 alias h="history"
 
 if [ `uname` = 'Darwin' ];then
 	alias l="ls -lahT"
 fi
 
-alias py="python"
-alias p3="python3"
+alias python2="/usr/bin/python2.7"
+alias pip2="/usr/local/bin/pip2.7"
+alias py="/usr/local/bin/python3"
+alias python="/usr/local/bin/python3"
+alias pip='/usr/local/bin/pip3'
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -123,7 +128,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
-alias mm="/usr/local/bin/mvim" 
+alias mm="/usr/local/bin/mvim"
 
 ######## 环境变量 ########
 export SVN_EDITOR=vim
@@ -169,15 +174,12 @@ function upgrade_oh_my_zsh_custom_plugins() {
     pluginsPath=~/.oh-my-zsh/custom/plugins
     builtin cd $pluginsPath
 
-    for plu in *; do
+    for plu in $pluginsPath/*; do
         echo $plu
-        if [[ -d $plu ]]; then
-	        builtin cd ${plu}
-		    if [[ -d ".git" ]]; then
-                git pull
-       	    fi
-       	fi
-		builtin cd $pluginsPath
+	    builtin cd ${plu}
+	    if [[ -d ".git" ]]; then
+            git pull
+   	    fi
     done
 
     builtin cd ${oldPath}
