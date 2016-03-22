@@ -3,7 +3,6 @@
 ########### 要安装的URL列表############
 plugins=(\
  'https://github.com/onevcat/VVDocumenter-Xcode' \
-	'https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin' \
 	 'https://github.com/markohlebar/Peckham' \
 	   'https://github.com/trawor/XToDo' \
 	    'https://github.com/omz/ColorSense-for-Xcode' \
