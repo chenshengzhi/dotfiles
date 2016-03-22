@@ -4,4 +4,5 @@
     "anaconda_linting": true,
     "anaconda_linter_mark_style": "none",
     "anaconda_linter_underlines": false,
+    "complete_parameters": false,
 }
