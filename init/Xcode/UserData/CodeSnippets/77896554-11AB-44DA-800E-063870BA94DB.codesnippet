@@ -15,7 +15,7 @@
     dispatch_once(&amp;onceToken, ^{
         _shared&lt;#name#&gt; = &lt;#initializer#&gt;;
     });
-    
+
     return _shared&lt;#name#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -25,7 +25,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>单例</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UserSnippet-单例</string>
+	<string>UserSnippet-Objective-C</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

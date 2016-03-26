@@ -10,13 +10,13 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
-    
+
     &lt;#code#&gt;
-        
+
         dispatch_async(dispatch_get_main_queue(), ^(void){
-            
+
             &lt;#code#&gt;
-            
+
         });
     });</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -26,7 +26,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>gcd后台线程主线程</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UserSnippet-gcd后台线程主线程</string>
+	<string>UserSnippet-Objective-C</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
