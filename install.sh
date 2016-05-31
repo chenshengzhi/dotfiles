@@ -86,8 +86,9 @@ gem sources -a https://ruby.taobao.org/
 sudo gem install cocoapods
 
 cp ./init/checkHosts ./init/cleanXcodeDeriveData ./init/clearDNSCache ./init/hostsInstall ./init/installUpdateXcodePlugins ~/Desktop
+mkdir -p ~/Library/LaunchAgents/
 cp ./init/com.csz.updateHosts.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaucnAgents/com.csz.updateHosts.plist
+launchctl load ~/Library/LaunchAgents/com.csz.updateHosts.plist
 
 source ./recovery.sh
 
