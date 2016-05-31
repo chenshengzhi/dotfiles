@@ -40,6 +40,9 @@ defaults write com.apple.dock showhidden -bool true
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
 
+# Set the animation when hiding/showing the Dock
+defaults write com.apple.dock autohide-time-modifier -float 0.5
+
 # Add iOS & Watch Simulator to Launchpad
 sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
 
