@@ -20,10 +20,8 @@ function pullAndbuildPlugin() {
 	echo ''
 	echo $1
 	cd $1
-	oldCommit=`cat .git/ORIG_HEAD`
-	git pull
-	newCommit=`cat .git/ORIG_HEAD`
-	if [[ $oldCommit == $newCommit ]]; then
+	if [ "`git pull`" = 'Already up-to-date.' ]; then
+		echo 'Already up-to-date.'
 		return
 	fi
 
