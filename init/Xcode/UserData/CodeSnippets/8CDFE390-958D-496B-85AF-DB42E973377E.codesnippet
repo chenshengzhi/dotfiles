@@ -15,7 +15,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>NSString定义</string>
+	<string>(nonatomic, strong) NSString property</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UserSnippet-Objective-C</string>
 	<key>IDECodeSnippetUserSnippet</key>

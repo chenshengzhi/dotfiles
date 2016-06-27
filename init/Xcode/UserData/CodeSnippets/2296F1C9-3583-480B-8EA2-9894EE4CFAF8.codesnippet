@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>psr</string>
+	<string>pwdegate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong, readonly) &lt;#ObjectType#&gt; *&lt;#name#&gt;</string>
+	<string>@property (nonatomic, weak) id&lt;&lt;#protocol#&gt;&gt;&lt;#delegate#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2296F1C9-3583-480B-8EA2-9894EE4CFAF8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>strong readonly property</string>
+	<string>(nonatomic, weak) property delegate</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UserSnippet-Objective-C</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
