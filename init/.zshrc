@@ -184,3 +184,9 @@ function upgrade_oh_my_zsh_custom_plugins() {
 
     builtin cd ${oldPath}
 }
+
+function gittagpush(){
+	git tag -a $* -m '$*'
+	git push --tags
+}
+
