@@ -6,7 +6,7 @@
 	<string>pni</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>@property (nonatomic) UInt32 &lt;#name#&gt;</string>

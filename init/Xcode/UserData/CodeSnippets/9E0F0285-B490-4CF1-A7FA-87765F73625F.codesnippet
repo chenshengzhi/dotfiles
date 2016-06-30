@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>psn</string>
+	<string>makeConstraint</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) NSNumber *&lt;#name#&gt;</string>
+	<string>[&lt;#view#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.&lt;#attribute#&gt;
+        }];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>070B5E1E-F297-41B1-BA8E-B0450B326FF3</string>
+	<string>9E0F0285-B490-4CF1-A7FA-87765F73625F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>(nonatomic, strong) NSNumber property</string>
+	<string>mas_makeConstraint</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UserSnippet-Objective-C</string>
 	<key>IDECodeSnippetUserSnippet</key>

@@ -6,7 +6,7 @@
 	<string>pn</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>@property (nonatomic) &lt;#NormalType#&gt; &lt;#name#&gt;</string>
