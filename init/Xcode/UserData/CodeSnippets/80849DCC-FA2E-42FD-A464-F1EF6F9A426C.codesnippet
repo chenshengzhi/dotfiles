@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>todo</string>
+	<string>pmset</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#warning todo</string>
+	<string>#pragma mark - Setters -</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>52792BED-715B-4D2E-B470-B36C45F2B720</string>
+	<string>80849DCC-FA2E-42FD-A464-F1EF6F9A426C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>#warning todo</string>
+	<string>#pragma mark - Setters -</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UserSnippet-Objective-c</string>
 	<key>IDECodeSnippetUserSnippet</key>
