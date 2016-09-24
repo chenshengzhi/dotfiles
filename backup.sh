@@ -33,7 +33,7 @@ if [ `uname` == 'Darwin' ];then
     fi
 
     rm -rf ./init/Xcode
-    mkdir -p ./init/Xcode
+    mkdir -p ./init/Xcode/UserData
     cp -R ~/Library/Developer/Xcode/UserData/CodeSnippets ./init/Xcode/UserData/CodeSnippets
     cp -R ~/Library/Developer/Xcode/UserData/FontAndColorThemes ./init/Xcode/UserData/FontAndColorThemes
     cp -R ~/Library/Developer/Xcode/UserData/KeyBindings ./init/Xcode/UserData/KeyBindings
