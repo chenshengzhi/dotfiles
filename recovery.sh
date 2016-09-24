@@ -1,11 +1,11 @@
 #!/bin/bash
 
-git pull
+# git pull
 
-git show
+# git show
 
-echo  "press enter key to continue"
-read
+# echo  "press enter key to continue"
+# read
 
 if [ `uname` == 'Darwin' ];then
 	cp ./init/.lldbinit ~/
@@ -38,7 +38,7 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ];then
 	vim +PluginInstall +qall
 fi
 
-if [ -d ./init/vim/MySnippets ] && [ `ls ./init/vim/MySnippets/` > 0 ];then
+if [ -d ./init/vim/MySnippets ];then
 	rm -rf ~/.vim/MySnippets
 	mkdir -p ~/.vim/MySnippets
 	cp -R ./init/vim/MySnippets/* ~/.vim/MySnippets/*
@@ -47,10 +47,10 @@ fi
 if [ `uname` == 'Darwin' ];then
 	defaults import com.googlecode.iterm2 ./init/com.googlecode.iterm2.plist
 	mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-	cp -R ./init/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+	cp -R ./init/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 elif [ `uname` == 'Linux' ];then
 	mkdir -p ~/.config/sublime-text-3/Packages/User
-	cp -R ./init/sublime/User ~/.config/sublime-text-3/Packages/User/
+	cp -R ./init/sublime/User ~/.config/sublime-text-3/Packages/
 fi
 
 if [ `uname` == 'Darwin' ];then
