@@ -27,9 +27,8 @@ if [ `uname` == 'Darwin' ];then
     cp ~/Library/Preferences/com.googlecode.iterm2.plist ./init/
 
     if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ];then
-        rm -rf ./init/sublime
         mkdir -p ./init/sublime
-        cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ./init/sublime/
+        cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings ./init/sublime/Package\ Control.sublime-settings
     fi
 
     rm -rf ./init/Xcode
