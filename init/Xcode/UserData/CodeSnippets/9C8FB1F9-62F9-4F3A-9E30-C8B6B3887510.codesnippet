@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>rgbcolor</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[UIColor colorWithRed:&lt;#(CGFloat)#&gt;/255.0 green:&lt;#(CGFloat)#&gt;/255.0 blue:&lt;#(CGFloat)#&gt;/255.0 alpha:&lt;#(CGFloat)#&gt;]</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9C8FB1F9-62F9-4F3A-9E30-C8B6B3887510</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>颜色</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UserSnippet-Objective-C</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
