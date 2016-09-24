@@ -28,7 +28,7 @@ if [ `uname` == 'Darwin' ];then
 
     if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ];then
         mkdir -p ./init/sublime
-        cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings ./init/sublime/Package\ Control.sublime-settings
+        cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ./init/sublime/
     fi
 
     rm -rf ./init/Xcode

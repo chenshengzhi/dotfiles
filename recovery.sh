@@ -47,10 +47,10 @@ fi
 if [ `uname` == 'Darwin' ];then
 	defaults import com.googlecode.iterm2 ./init/com.googlecode.iterm2.plist
 	mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-	cp -R ./init/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
+	cp -R ./init/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 elif [ `uname` == 'Linux' ];then
 	mkdir -p ~/.config/sublime-text-3/Packages/User
-	cp -R ./init/sublime/Package\ Control.sublime-settings ~/.config/sublime-text-3/Packages/User/Package\ Control.sublime-settings
+	cp -R ./init/sublime/User ~/.config/sublime-text-3/Packages/User/
 fi
 
 if [ `uname` == 'Darwin' ];then
