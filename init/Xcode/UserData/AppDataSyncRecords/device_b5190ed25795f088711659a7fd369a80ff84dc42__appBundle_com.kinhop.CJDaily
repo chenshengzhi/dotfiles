@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>localPath</key>
+	<string>/Users/shengzhichen/Desktop/com.kinhop.CJDaily 2016-07-03 12:15.25.922.xcappdata</string>
+	<key>topLevel</key>
+	<dict>
+		<key>/Documents/db.sqlite</key>
+		<dict>
+			<key>dFileSize</key>
+			<string>69632</string>
+			<key>dModificationTime</key>
+			<string>1467524882000000000</string>
+			<key>localModificationInfo</key>
+			<string>date_2016-07-03 04:15:32 +0000__size_69632</string>
+		</dict>
+		<key>/Library/Preferences/com.kinhop.CJDaily.plist</key>
+		<dict>
+			<key>dFileSize</key>
+			<string>196</string>
+			<key>dModificationTime</key>
+			<string>1467524882000000000</string>
+			<key>localModificationInfo</key>
+			<string>date_2016-07-03 04:15:32 +0000__size_196</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

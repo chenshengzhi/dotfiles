@@ -24,6 +24,50 @@
 				<key>Title</key>
 				<string>Duplicate</string>
 			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:csz.SZEditorExtension.SZXcodeEditorExtension,IDESourceEditorExtensionCommand:csz.SZEditorExtension.SZXcodeEditorExtension.duplicateLine</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDESourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>@d</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>SZXcodeEditorExtension</string>
+				<key>Title</key>
+				<string>Duplicate Line</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:csz.SZEditorExtension.SZXcodeEditorExtension,IDESourceEditorExtensionCommand:csz.SZEditorExtension.SZXcodeEditorExtension.deleteLine</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDESourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Keyboard Shortcut</key>
+				<string>^d</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>SZXcodeEditorExtension</string>
+				<key>Title</key>
+				<string>Delete Line</string>
+			</dict>
 		</array>
 		<key>Version</key>
 		<integer>3</integer>
@@ -32,20 +76,6 @@
 	<dict>
 		<key>Key Bindings</key>
 		<dict>
-			<key>@d</key>
-			<array>
-				<string>selectLine:</string>
-				<string>copy:</string>
-				<string>moveToEndOfLine:</string>
-				<string>insertNewline:</string>
-				<string>paste:</string>
-				<string>deleteBackward:</string>
-			</array>
-			<key>^d</key>
-			<array>
-				<string>selectLine:</string>
-				<string>deleteBackward:</string>
-			</array>
 			<key></key>
 			<string>deleteForward:</string>
 		</dict>

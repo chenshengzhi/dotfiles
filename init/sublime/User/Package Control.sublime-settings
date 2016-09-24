@@ -5,18 +5,8 @@
 	],
 	"installed_packages":
 	[
-		"All Autocomplete",
-		"Anaconda",
-		"AutoPEP8",
-		"BinaryPlist",
-		"C Improved",
-		"DocBlockr",
-		"Package Control",
-		"SideBarEnhancements",
-		"SublimeAStyleFormatter",
-		"SublimeCodeIntel",
-		"SublimeLinter",
-		"SublimeLinter-cppcheck",
-		"SublimeREPL"
+		"Codecs33",
+		"ConvertToUTF8",
+		"Package Control"
 	]
 }
