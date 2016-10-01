@@ -68,8 +68,8 @@ brew install openssl
 brew install wget
 brew install chisel
 brew install htop
-brew install vim
-brew install cmake
+# brew install vim
+# brew install cmake
 brew install python3
 
 pip3 install pep8
