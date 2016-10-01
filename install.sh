@@ -52,11 +52,11 @@ killall Dock
 killall Finder
 
 # MacVim should be installed
-cp ./init/vim/mvim /usr/local/bin/
-sudo ln -s /usr/local/bin/mvim /usr/local/bin/vim
+# cp ./init/vim/mvim /usr/local/bin/
+# sudo ln -s /usr/local/bin/mvim /usr/local/bin/vim
 
 # iterm should be installed
-# open ./init/honukai.itermcolors
+open ./init/honukai.itermcolors
 mkdir -p ~/Library/Fonts
 cp ./init/MonacoForPowerline.otf ~/Library/Fonts/
 defaults import com.googlecode.iterm2 ./init/com.googlecode.iterm2.plist
@@ -70,7 +70,7 @@ brew install chisel
 brew install htop
 brew install vim
 brew install cmake
-brew install ctags
+# brew install ctags
 brew install python3
 
 pip3 install pep8
@@ -84,8 +84,8 @@ if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ];then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 fi
 
-gem sources -r https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
+# gem sources -r https://rubygems.org/
+# gem sources -a https://ruby.taobao.org/
 sudo gem install cocoapods
 
 cp ./init/checkHosts ./init/cleanXcodeDeriveData ./init/clearDNSCache ./init/hostsInstall ~/Desktop
