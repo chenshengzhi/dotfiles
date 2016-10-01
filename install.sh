@@ -70,7 +70,6 @@ brew install chisel
 brew install htop
 brew install vim
 brew install cmake
-# brew install ctags
 brew install python3
 
 pip3 install pep8
