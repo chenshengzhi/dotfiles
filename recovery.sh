@@ -12,17 +12,8 @@ if [ `uname` == 'Darwin' ];then
 fi
 cp ./init/.vimrc ~/
 cp ./init/.vimrc.bundles ~/
-cp ./init/.gvimrc ~/
 cp ./init/.zshrc ~/
-cp ./init/.ycm_extra_conf.py ~/
 
-if [ ! -f /usr/local/bin/ctags ];then
-	if [ `uname` == 'Darwin' ];then
-		brew install ctags
-	elif [ `uname` == 'Linux' ];then
-		sudo apt-get install ctags
-	fi
-fi
 
 if [[ `which cmake` != *cmake ]];then
     if [ `uname` == 'Darwin' ];then
