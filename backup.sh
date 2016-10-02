@@ -24,7 +24,9 @@ if [ -d ~/.vim/MySnippets ];then
 fi
 
 if [ `uname` == 'Darwin' ];then
-    cp ~/Library/Preferences/com.googlecode.iterm2.plist ./init/
+    defaults export com.googlecode.iterm2 ./init/com.googlecode.iterm2.plist
+    defaults delete `pwd`/init/com.googlecode.iterm2.plist 'Window Arrangements'
+    defaults delete `pwd`/init/com.googlecode.iterm2.plist 'Default Arrangement Name'
 
     if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ];then
         mkdir -p ./init/sublime
