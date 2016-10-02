@@ -24,14 +24,15 @@ done
 
 1. http://iterm2.com/
 2. https://central.github.com/mac/latest
-4. http://www.firefox.com.cn/
-5. https://developer.apple.com/xcode/download/
-6. https://developer.apple.com/downloads/
-7. http://srf.baidu.com/input/mac.html
-8. http://www.sublimetext.com/
-9. http://im.qq.com/macqq/index.shtml
-10. http://cidian.youdao.com/index-mac.html
-11. https://itunes.apple.com/cn/app/go2shell/id445770608?mt=12
+3. http://www.firefox.com.cn/
+4. https://developer.apple.com/xcode/download/
+5. https://developer.apple.com/downloads/
+6. http://srf.baidu.com/input/mac.html
+7. http://www.sublimetext.com/
+8. http://im.qq.com/macqq/index.shtml
+9. http://cidian.youdao.com/index-mac.html
+10. https://itunes.apple.com/cn/app/go2shell/id445770608?mt=12
+11. https://spectacleapp.com/
 
 ```
 git clone https://github.com/chenshengzhi/dotfiles.git && cd dotfiles && source install.sh && cd ..
