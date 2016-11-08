@@ -88,9 +88,10 @@ fi
 sudo gem install cocoapods
 
 cp ./init/checkHosts ./init/cleanXcodeDeriveData ./init/clearDNSCache ./init/hostsInstall ~/Desktop
-mkdir -p ~/Library/LaunchAgents/
-cp ./init/com.csz.updateHosts.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.csz.updateHosts.plist
+
+# mkdir -p ~/Library/LaunchAgents/
+# cp ./init/com.csz.updateHosts.plist ~/Library/LaunchAgents/
+# launchctl load ~/Library/LaunchAgents/com.csz.updateHosts.plist
 
 source ./recovery.sh
 
