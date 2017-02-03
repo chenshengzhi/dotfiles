@@ -25,8 +25,8 @@ fi
 
 if [ `uname` == 'Darwin' ];then
     defaults export com.googlecode.iterm2 ./init/com.googlecode.iterm2.plist
-    defaults delete `pwd`/init/com.googlecode.iterm2.plist 'Window Arrangements'
-    defaults delete `pwd`/init/com.googlecode.iterm2.plist 'Default Arrangement Name'
+    /usr/libexec/PlistBuddy -c 'Delete:Window\ Arrangements' `pwd`/init/com.googlecode.iterm2.plist
+    /usr/libexec/PlistBuddy -c 'Delete:Default\ Arrangement\ Name' `pwd`/init/com.googlecode.iterm2.plist
 
     if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ];then
         mkdir -p ./init/sublime
