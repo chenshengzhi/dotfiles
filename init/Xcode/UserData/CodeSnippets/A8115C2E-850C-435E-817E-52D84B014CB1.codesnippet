@@ -9,13 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define CLog(fmt, ...) printf(("%s %s [%d] : " fmt "\n"), __TIME__, __PRETTY_FUNCTION__, __LINE__,  ##__VA_ARGS__)</string>
+	<string>#define CLog(fmt, ...) printf(("%s %s [%d] : " fmt "\n"), __TIME__, __FUNCTION__, __LINE__,  ##__VA_ARGS__)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>A8115C2E-850C-435E-817E-52D84B014CB1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>print with prefix time, pretty function, line and newline endian</string>
+	<string>mylog</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UserSnippet-C</string>
 	<key>IDECodeSnippetUserSnippet</key>
