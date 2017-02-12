@@ -33,6 +33,7 @@ done
 9. http://cidian.youdao.com/index-mac.html
 10. https://itunes.apple.com/cn/app/go2shell/id445770608?mt=12
 11. https://spectacleapp.com/
+12. https://tokyo.kapeli.com/downloads/v3/Dash.zip
 
 ```
 git clone https://github.com/chenshengzhi/dotfiles.git && cd dotfiles && source install.sh && cd ..
