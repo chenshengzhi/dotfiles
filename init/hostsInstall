@@ -1,5 +1,0 @@
-#!/bin/bash
-
-wget https://raw.githubusercontent.com/racaljk/hosts/master/hosts -O ~/Desktop/hosts
-# echo 'this is your password' | sudo -S mv ~/Desktop/hosts /etc/hosts
-sudo mv ~/Desktop/hosts /etc/hosts

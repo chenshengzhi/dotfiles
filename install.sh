@@ -87,7 +87,7 @@ fi
 # gem sources -a https://ruby.taobao.org/
 sudo gem install cocoapods
 
-cp ./init/checkHosts ./init/cleanXcodeDeriveData ./init/clearDNSCache ./init/hostsInstall ./init/random_password.py ~/Desktop
+cp ./init/cleanXcodeDeriveData ./init/clearDNSCache ./init/random_password.py ~/Desktop
 
 mkdir -p ~/Library/LaunchAgents/
 cp ./init/com.csz.updateHosts.plist ~/Library/LaunchAgents/
