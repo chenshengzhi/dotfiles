@@ -6,7 +6,7 @@
 	<string>pmpub</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - Public Methods -</string>

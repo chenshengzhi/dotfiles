@@ -2,22 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>psr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong, readonly) &lt;#ObjectType#&gt; *&lt;#name#&gt;</string>
+	<string>#warning test</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>681B50F9-4CE0-4C23-85A2-EBD5231E1277</string>
+	<string>31F178F7-2806-4F2E-B147-7E2B8C9CE6EB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>(nonatomic, readonly, strong) property</string>
+	<string>#warning test</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UserSnippet-Objective-C</string>
+	<string>UserSnippet-Objective-c</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
