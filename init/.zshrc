@@ -128,7 +128,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
-alias mm="/usr/local/bin/mvim"
+alias ss="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;"
+
 
 ######## 环境变量 ########
 export SVN_EDITOR=vim
@@ -190,3 +191,22 @@ function gittagpush(){
 	git push --tags
 }
 
+function xo() {
+    if [[ $# > 0 ]]; then
+      cd $1
+    fi
+
+    project=`find . -name "*.xcworkspace" -maxdepth 1`
+    if [[ ${#project} > 0 ]]; then
+        open $project;
+    else
+        project=`find . -name "*.xcodeproj" -maxdepth 1`
+        if [[ ${#project} > 0 ]]; then
+            open $project;
+        fi
+    fi
+}
+
+
+export NVM_DIR="/Users/csz/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
