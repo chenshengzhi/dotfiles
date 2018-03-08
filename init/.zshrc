@@ -191,7 +191,7 @@ function gittagpush(){
 	git push --tags
 }
 
-function xo() {
+function ox() {
     if [[ $# > 0 ]]; then
       cd $1
     fi
