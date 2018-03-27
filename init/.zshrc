@@ -130,6 +130,8 @@ alias ......="cd ../../../../.."
 
 alias ss="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;"
 
+alias gla="gl -p"
+
 
 ######## 环境变量 ########
 export SVN_EDITOR=vim
