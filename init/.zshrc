@@ -100,7 +100,7 @@ alias help="run-help"
 
 alias pods="pod search"
 alias podi="pod install --no-repo-update"
-alias podu="pod update --no-repo-update"
+alias podu="date && pod update --no-repo-update && date"
 
 alias svndel="svn delete"
 alias svncommit="svn commit -m"
