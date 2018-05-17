@@ -194,6 +194,7 @@ function gittagpush(){
 }
 
 function ox() {
+    oldPath=`pwd`
     if [[ $# > 0 ]]; then
       cd $1
     fi
@@ -207,6 +208,7 @@ function ox() {
             open $project;
         fi
     fi
+    cd $oldPath
 }
 
 
