@@ -99,8 +99,6 @@ alias upzsh="upgrade_oh_my_zsh_custom_plugins && upgrade_oh_my_zsh"
 alias help="run-help"
 
 alias pods="pod search"
-alias podi="pod install --no-repo-update"
-alias podu="date && pod update --no-repo-update && date"
 
 alias svndel="svn delete"
 alias svncommit="svn commit -m"
@@ -211,6 +209,21 @@ function ox() {
     cd $oldPath
 }
 
+function podi() {
+    begin=`date`
+    pod install --no-repo-update
+    echo ""
+    echo "begin: $begin"
+    echo "end:   `date`"
+}
+
+function podu() {
+    begin=`date`
+    pod update --no-repo-update
+    echo ""
+    echo "begin: $begin"
+    echo "end:   `date`"
+}
 
 export NVM_DIR="/Users/csz/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
