@@ -141,7 +141,7 @@ function cd(){
     if [ $# -eq 0 ]; then
         newdir=${HOME};
     fi;
-    builtin cd "$newdir" && l && pwd
+    builtin cd "$newdir" && ls -lahT && pwd
 }
 
 function psa(){
