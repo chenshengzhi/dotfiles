@@ -34,6 +34,7 @@ done
 10. https://itunes.apple.com/cn/app/go2shell/id445770608?mt=12
 11. https://spectacleapp.com/
 12. https://tokyo.kapeli.com/downloads/v3/Dash.zip
+13. https://github.com/shadowsocks/ShadowsocksX-NG
 
 ```
 git clone https://github.com/chenshengzhi/dotfiles.git && cd dotfiles && source install.sh && cd ..
