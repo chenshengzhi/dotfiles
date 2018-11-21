@@ -71,6 +71,9 @@ brew install htop
 # brew install vim
 # brew install cmake
 brew install python3
+brew install ruby
+brew install carthage
+
 
 pip3 install pep8
 pip3 install pyflakes
