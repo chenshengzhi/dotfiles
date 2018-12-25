@@ -69,7 +69,7 @@ brew install wget
 brew install chisel
 brew install htop
 # brew install vim
-# brew install cmake
+brew install cmake
 brew install python3
 brew install ruby
 brew install carthage
@@ -86,15 +86,15 @@ if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ];then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 fi
 
-# gem sources -r https://rubygems.org/
-# gem sources -a https://ruby.taobao.org/
+if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ];then
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+fi
+
+gem sources -r https://rubygems.org/
+gem sources -a https://gems.ruby-china.com/
 sudo gem install cocoapods
 
 cp ./init/cleanXcodeDeriveData ./init/clearDNSCache ./init/random_password.py ~/Desktop
-
-mkdir -p ~/Library/LaunchAgents/
-cp ./init/com.csz.updateHosts.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.csz.updateHosts.plist
 
 source ./recovery.sh
 
