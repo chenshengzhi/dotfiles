@@ -1,3 +1,4 @@
 [
     { "keys": ["ctrl+i"], "command": "reindent" },
+    { "keys": ["ctrl+super+e"], "command": "find_all_under" },
 ]
