@@ -9,13 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - Public Methods -</string>
+	<string>#pragma mark - Public Methods</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7AEA1ACD-8845-4151-9F30-63A3965E85F2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>#pragma mark - Public Methods -</string>
+	<string>#pragma mark - Public Methods</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UserSnippet-Objective-c</string>
 	<key>IDECodeSnippetUserSnippet</key>

@@ -9,13 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - Getters -</string>
+	<string>#pragma mark - Getters</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>018B8788-6C8B-4C5B-988C-9C6434C3499D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>#pragma mark - Getters -</string>
+	<string>#pragma mark - Getters</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UserSnippets-Objective-c</string>
 	<key>IDECodeSnippetUserSnippet</key>
