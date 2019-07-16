@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>remakeConstraint</string>
+	<string>delegateselector</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#view#&gt; mas_remakeConstraints:^(MASConstraintMaker *make) {
-    make.&lt;#attribute#&gt;
-        }];</string>
+	<string>if ([self.delegate respondsToSelector:@selector(&lt;#selector#&gt;:)]) {
+    [self.delegate &lt;#selector#&gt;:self];
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CF89567C-E61F-4535-87C0-CFEEF024B0C1</string>
+	<string>68E4ECA8-1950-497F-81C6-AA825F56BFBB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>mas_remakeConstraint</string>
+	<string>delegate selector</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UserSnippet-Objective-C</string>
+	<string>UserSnippet-Objective-c</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

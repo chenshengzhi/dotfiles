@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>remakeConstraint</string>
+	<string>dispatchafter</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#view#&gt; mas_remakeConstraints:^(MASConstraintMaker *make) {
-    make.&lt;#attribute#&gt;
-        }];</string>
+	<string>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(&lt;#seconds#&gt; * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+&lt;#code#&gt;
+});</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CF89567C-E61F-4535-87C0-CFEEF024B0C1</string>
+	<string>8FC6BABD-9770-4DE5-8C5E-F4D79CADEC4F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>mas_remakeConstraint</string>
+	<string>dispatch after</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UserSnippet-Objective-C</string>
+	<string>UserSnippet-Objective-c</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

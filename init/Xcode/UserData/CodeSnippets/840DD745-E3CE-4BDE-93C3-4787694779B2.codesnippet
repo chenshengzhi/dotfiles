@@ -28,8 +28,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-</string>
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>840DD745-E3CE-4BDE-93C3-4787694779B2</string>
 	<key>IDECodeSnippetLanguage</key>
