@@ -89,7 +89,7 @@ DISABLE_UPDATE_PROMPT=true
 
 ################# custom settings #######################
 
-export PATH="/usr/local/opt/ruby/bin:/opt/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.fastlane/bin"
+export PATH="$HOME/.rvm/bin:/opt/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.fastlane/bin:$PATH"
 
 DEFAULT_USER=`whoami`
 
