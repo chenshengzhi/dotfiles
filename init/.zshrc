@@ -15,7 +15,7 @@ ZSH_THEME="agnoster"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -49,13 +49,13 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z colored-man-pages zsh-syntax-highlighting)
+plugins=(git z colored-man-pages zsh-syntax-highlighting encode64 sublime zsh-autosuggestions)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+source ~/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -89,7 +89,7 @@ DISABLE_UPDATE_PROMPT=true
 
 ################# custom settings #######################
 
-export PATH="/opt/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOME/.rvm/bin:/opt/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.fastlane/bin:$PATH"
 
 DEFAULT_USER=`whoami`
 
@@ -129,6 +129,8 @@ alias ......="cd ../../../../.."
 alias ss="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;"
 
 alias gla="gl -p"
+
+alias cartuciOS="carthage update --cache-builds --platform iOS"
 
 
 ######## 环境变量 ########
@@ -177,18 +179,18 @@ function upgrade_oh_my_zsh_custom_plugins() {
 
     for plu in $pluginsPath/*; do
         echo $plu
-	    builtin cd ${plu}
-	    if [[ -d ".git" ]]; then
+        builtin cd ${plu}
+        if [[ -d ".git" ]]; then
             git pull
-   	    fi
+        fi
     done
 
     builtin cd ${oldPath}
 }
 
 function gittagpush(){
-	git tag -a $* -m '$*'
-	git push --tags
+    git tag -a $* -m '$*'
+    git push --tags
 }
 
 function ox() {
@@ -209,6 +211,14 @@ function ox() {
     cd $oldPath
 }
 
+function o() {
+    if [[ $# > 0 ]]; then
+        open $*
+    else
+        open .
+    fi
+}
+
 function podi() {
     begin=`date`
     pod install --no-repo-update
@@ -225,5 +235,40 @@ function podu() {
     echo "end:   `date`"
 }
 
-export NVM_DIR="/Users/csz/.nvm"
+function vnat64() {
+    _vnatos $1 arm64 $2
+}
+
+function vnat64e() {
+    _vnatos $1 arm64e $2
+}
+
+function vnatv7() {
+    _vnatos $1 armv7 $2
+}
+
+function _vnatos() {
+    dsymDirectory=~/Documents/feedback/dSYM/$1
+    if [ ! -d $dsymDirectory ]; then
+        echo "don't exist, will copy and unzip"
+        cp -rf ~/.jenkins/jobs/VlogNow/builds/$1/archive/VlogNow.app.dSYM.zip ~/Documents/feedback/dSYM/
+        unzip -n ~/Documents/feedback/dSYM/VlogNow.app.dSYM.zip -d ~/Documents/feedback/dSYM/$1
+        rm ~/Documents/feedback/dSYM/VlogNow.app.dSYM.zip
+    fi
+    echo "atos -o ~/Documents/feedback/dSYM/$1/VlogNow.app.dSYM/Contents/Resources/DWARF/VlogNow -arch $2 -l $3"
+    atos -o ~/Documents/feedback/dSYM/$1/VlogNow.app.dSYM/Contents/Resources/DWARF/VlogNow -arch $2 -l $3
+}
+
+function ssProxyOn() {
+    ln -sf ~/.ssh/config-proxy-on ~/.ssh/config
+    ln -sf ~/.gitconfig-proxy-on ~/.gitconfig
+}
+
+function ssProxyOff() {
+    ln -sf ~/.ssh/config-proxy-off ~/.ssh/config
+    ln -sf ~/.gitconfig-proxy-off ~/.gitconfig
+}
+
+export NVM_DIR="$HOME/.nvm"
+export PATH="$HOME/.fastlane/bin:$PATH"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

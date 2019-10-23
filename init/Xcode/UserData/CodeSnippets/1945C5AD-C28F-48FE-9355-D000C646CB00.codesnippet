@@ -9,13 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - Private Methods -</string>
+	<string>#pragma mark - Private Methods</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1945C5AD-C28F-48FE-9355-D000C646CB00</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>#pragma mark - Private Methods -</string>
+	<string>#pragma mark - Private Methods</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UserSnippet-Objective-c</string>
 	<key>IDECodeSnippetUserSnippet</key>

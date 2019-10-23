@@ -19,7 +19,11 @@ if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ];then
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-high
 fi
 
-chsh -s /bin/zsh		
+if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ];then
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+fi
+
+chsh -s /bin/zsh
 'allow-guest=false' >> /etc/lightdm/lightdm.conf
 
 source ./recovery.sh

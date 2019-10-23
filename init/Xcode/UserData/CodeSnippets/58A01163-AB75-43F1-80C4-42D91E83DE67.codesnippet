@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pmget</string>
+	<string>tmparray</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - Getters</string>
+	<string>NSMutableArray *tempArray = [NSMutableArray array];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>018B8788-6C8B-4C5B-988C-9C6434C3499D</string>
+	<string>58A01163-AB75-43F1-80C4-42D91E83DE67</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>#pragma mark - Getters</string>
+	<string>temp array</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UserSnippets-Objective-c</string>
+	<string>UserSnippet-Objective-c</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

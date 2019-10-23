@@ -17,8 +17,7 @@
     [self remakeConstraints];
 
     [super updateConstraints];
-}
-</string>
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>9B1B5ABD-6BC3-4D2E-90F3-914C68B6A847</string>
 	<key>IDECodeSnippetLanguage</key>
