@@ -3,19 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pmdelegate</string>
+	<string>tmpdict</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - &lt;#delegate#&gt;</string>
+	<string>NSMutableDictionary *map = [NSMutableDictionary dictionary];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5833413B-9AE6-4302-B0C8-8417511607CA</string>
+	<string>83482DED-F1E0-48AA-A027-945F5C637AB4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>#pragma mark - &lt;#delegate#&gt;</string>
+	<string>temp dictionary</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UserSnippet-Objective-c</string>
 	<key>IDECodeSnippetUserSnippet</key>
