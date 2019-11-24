@@ -214,11 +214,11 @@ function ox() {
 
     project=`find . -name "*.xcworkspace" -maxdepth 1`
     if [[ ${#project} > 0 ]]; then
-        open $project;
+        open $project -a /Applications/Xcode.app;
     else
         project=`find . -name "*.xcodeproj" -maxdepth 1`
         if [[ ${#project} > 0 ]]; then
-            open $project;
+            open $project -a /Applications/Xcode.app;
         fi
     fi
     cd $oldPath
