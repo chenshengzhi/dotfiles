@@ -113,12 +113,6 @@ alias help="run-help"
 
 alias pods="pod search"
 
-alias svndel="svn delete"
-alias svncommit="svn commit -m"
-alias svnsetignore="svn propset svn:ignore"
-alias svneditignore="svn propedit svn:ignore"
-alias svngetignore="svn propget svn:ignore"
-
 alias gitaddcommitpush="git add . && git commit -m \"`date`\" && git push origin $(git_current_branch)"
 
 alias h="history"
