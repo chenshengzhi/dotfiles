@@ -102,7 +102,7 @@ DISABLE_UPDATE_PROMPT=true
 
 ################# custom settings #######################
 
-export PATH="$HOME/.rvm/bin:/opt/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.fastlane/bin:$PATH"
+export PATH="/opt/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.fastlane/bin:$PATH"
 
 DEFAULT_USER=`whoami`
 
@@ -285,3 +285,5 @@ function ssProxyOff() {
 export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.fastlane/bin:$PATH"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export PATH="$HOME/.rvm/gems/ruby-2.6.3/bin:$PATH"
+export PATH="$HOME/.rvm/bin:$PATH"
