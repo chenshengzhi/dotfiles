@@ -279,5 +279,5 @@ function ssProxyOff() {
 export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.fastlane/bin:$PATH"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-export PATH="$HOME/.rvm/gems/ruby-2.6.3/bin:$PATH"
 export PATH="$HOME/.rvm/bin:$PATH"
+export PATH="$HOME/.rvm/gems/ruby-2.6.3/bin:$PATH"
