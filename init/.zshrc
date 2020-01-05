@@ -242,6 +242,22 @@ function podu() {
     echo "end:   `date`"
 }
 
+function podiu() {
+    begin=`date`
+    pod install
+    echo ""
+    echo "begin: $begin"
+    echo "end:   `date`"
+}
+
+function poduu() {
+    begin=`date`
+    pod update
+    echo ""
+    echo "begin: $begin"
+    echo "end:   `date`"
+}
+
 function vnat64() {
     _vnatos $1 arm64 $2
 }
