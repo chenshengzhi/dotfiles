@@ -28,22 +28,13 @@ if [ `uname` == 'Darwin' ];then
     /usr/libexec/PlistBuddy -c 'Delete:Window\ Arrangements' `pwd`/init/com.googlecode.iterm2.plist
     /usr/libexec/PlistBuddy -c 'Delete:Default\ Arrangement\ Name' `pwd`/init/com.googlecode.iterm2.plist
 
-    if [ -d ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ];then
-        mkdir -p ./init/sublime
-        cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ./init/sublime/
-    fi
-
     rm -rf ./init/Xcode
     mkdir -p ./init/Xcode/UserData
     cp -R ~/Library/Developer/Xcode/UserData/CodeSnippets ./init/Xcode/UserData/CodeSnippets
     cp -R ~/Library/Developer/Xcode/UserData/FontAndColorThemes ./init/Xcode/UserData/FontAndColorThemes
     cp -R ~/Library/Developer/Xcode/UserData/KeyBindings ./init/Xcode/UserData/KeyBindings
 elif [ `uname` == 'Linux' ];then
-   if [ -d .config/sublime-text-3/Packages/User ];then
-        rm -rf ./init/sublime
-        mkdir -p ./init/sublime
-        cp -R .config/sublime-text-3/Packages/User ./init/sublime/
-    fi
+
 fi
 
 
