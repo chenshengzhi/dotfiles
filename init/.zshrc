@@ -139,6 +139,9 @@ alias gla="gl -p"
 
 alias cartuciOS="carthage update --cache-builds --platform iOS"
 
+alias rm='trash -F'
+alias subl='subl -w'
+
 
 ######## 环境变量 ########
 export SVN_EDITOR=vim
