@@ -99,7 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # automatically upgrade itself without prompting
 DISABLE_UPDATE_PROMPT=true
 
-
 ################# custom settings #######################
 
 export PATH="/opt/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.fastlane/bin:$PATH"
@@ -141,7 +140,6 @@ alias cartuciOS="carthage update --cache-builds --platform iOS"
 
 alias rm='trash -F'
 alias subl='subl -w'
-
 
 ######## 环境变量 ########
 export SVN_EDITOR=vim
@@ -261,30 +259,6 @@ function poduu() {
     echo "end:   `date`"
 }
 
-function vnat64() {
-    _vnatos $1 arm64 $2
-}
-
-function vnat64e() {
-    _vnatos $1 arm64e $2
-}
-
-function vnatv7() {
-    _vnatos $1 armv7 $2
-}
-
-function _vnatos() {
-    dsymDirectory=~/Documents/feedback/dSYM/$1
-    if [ ! -d $dsymDirectory ]; then
-        echo "don't exist, will copy and unzip"
-        cp -rf ~/.jenkins/jobs/VlogNow/builds/$1/archive/VlogNow.app.dSYM.zip ~/Documents/feedback/dSYM/
-        unzip -n ~/Documents/feedback/dSYM/VlogNow.app.dSYM.zip -d ~/Documents/feedback/dSYM/$1
-        rm ~/Documents/feedback/dSYM/VlogNow.app.dSYM.zip
-    fi
-    echo "atos -o ~/Documents/feedback/dSYM/$1/VlogNow.app.dSYM/Contents/Resources/DWARF/VlogNow -arch $2 -l $3"
-    atos -o ~/Documents/feedback/dSYM/$1/VlogNow.app.dSYM/Contents/Resources/DWARF/VlogNow -arch $2 -l $3
-}
-
 function ssProxyOn() {
     ln -sf ~/.ssh/config-proxy-on ~/.ssh/config
     ln -sf ~/.gitconfig-proxy-on ~/.gitconfig
@@ -298,5 +272,8 @@ function ssProxyOff() {
 export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.fastlane/bin:$PATH"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$HOME/.rvm/bin:$PATH"
-export PATH="$HOME/.rvm/gems/ruby-2.6.3/bin:$PATH"
+export PATH="$HOME/.rvm/gems/default/bin:$PATH"
+export PATH="$HOME/.rvm/rubies/default/bin:$PATH"
