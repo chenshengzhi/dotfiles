@@ -112,8 +112,6 @@ alias help="run-help"
 
 alias pods="pod search"
 
-alias gitaddcommitpush="git add . && git commit -m \"`date`\" && git push origin $(git_current_branch)"
-
 alias h="history"
 
 if [ `uname` = 'Darwin' ];then
@@ -135,6 +133,7 @@ alias ......="cd ../../../../.."
 alias ss="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;"
 
 alias gla="gl -p"
+alias gptags='git push origin -tags'
 
 alias cartuciOS="carthage update --cache-builds --platform iOS"
 
@@ -196,9 +195,19 @@ function upgrade_oh_my_zsh_custom_plugins() {
     builtin cd ${oldPath}
 }
 
-function gittagpush(){
-    git tag -a $* -m '$*'
-    git push --tags
+function git_add_tag_and_push() {
+    if [[ $# == 0 ]]; then
+        echo 'must have tag name.'
+    else
+        git tag -a $* -m '$*'
+        git push --tags
+    fi
+}
+
+function git_commit_with_time_and_push() {
+    git add .
+    git commit -m "`date`"
+    git push origin $(git_current_branch)
 }
 
 function ox() {
