@@ -132,8 +132,9 @@ alias ......="cd ../../../../.."
 
 alias ss="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;"
 
-alias gla="gl -p"
+alias gla="git pull -p"
 alias gptags='git push origin -tags'
+alias gpo="git push origin"
 
 alias cartuciOS="carthage update --cache-builds --platform iOS"
 
@@ -208,6 +209,22 @@ function git_commit_with_time_and_push() {
     git add .
     git commit -m "`date`"
     git push origin $(git_current_branch)
+}
+
+function gpod() {
+    branch_name=''
+    if [[ $# > 0 ]]; then
+        branch_name=$1
+    else
+        branch_name="$(git_current_branch)"
+    fi
+    echo -e "Will delete remote branch: \"${branch_name}\". Press any key to continue."
+    read comfirm
+    if [[ $# > 0 ]]; then
+        git push origin -d $1
+    else
+        git push origin -d "$(git_current_branch)"
+    fi
 }
 
 function ox() {
