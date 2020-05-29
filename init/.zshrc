@@ -285,12 +285,12 @@ function poduu() {
     echo "end:   `date`"
 }
 
-function ssProxyOn() {
+function sson() {
     ln -sf ~/.ssh/config-proxy-on ~/.ssh/config
     ln -sf ~/.gitconfig-proxy-on ~/.gitconfig
 }
 
-function ssProxyOff() {
+function ssoff() {
     ln -sf ~/.ssh/config-proxy-off ~/.ssh/config
     ln -sf ~/.gitconfig-proxy-off ~/.gitconfig
 }
