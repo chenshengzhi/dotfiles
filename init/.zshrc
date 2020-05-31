@@ -52,7 +52,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z colored-man-pages zsh-syntax-highlighting encode64 sublime zsh-autosuggestions)
+plugins=(git git-open z colored-man-pages zsh-syntax-highlighting encode64 sublime zsh-autosuggestions)
 
 ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
 pasteinit() {
@@ -139,6 +139,7 @@ alias gla="git pull -p"
 alias gptags='git push origin -tags'
 alias gpo="git push origin"
 alias gmm="git merge master"
+alias gito="git open"
 
 alias cartuciOS="carthage update --cache-builds --platform iOS"
 
