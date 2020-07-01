@@ -308,3 +308,4 @@ export GOPATH="$HOME/go"
 
 export GEM_HOME=~/.gem
 export GEM_PATH=~/.gem
+export PATH="$HOME/.gem/bin:$PATH"
