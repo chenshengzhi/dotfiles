@@ -304,8 +304,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.fastlane/bin:$PATH"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$HOME/.rvm/bin:$PATH"
-export PATH="$HOME/.rvm/gems/default/bin:$PATH"
-export PATH="$HOME/.rvm/rubies/default/bin:$PATH"
 export GOPATH="$HOME/go"
+
+export GEM_HOME=~/.gem
+export GEM_PATH=~/.gem
