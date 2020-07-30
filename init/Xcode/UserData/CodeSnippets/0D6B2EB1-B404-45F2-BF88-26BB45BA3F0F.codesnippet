@@ -3,19 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>stgself</string>
+	<string>davcomm</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__strong typeof(weakSelf) self = weakSelf;</string>
+	<string>///
+/// @date &lt;#date#&gt;
+/// @author Shengzhi.Chen
+/// @version &lt;#version#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1708C1FE-87C7-4F9A-8240-AF6AF2948BFC</string>
+	<string>0D6B2EB1-B404-45F2-BF88-26BB45BA3F0F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>strongSelf</string>
+	<string>add comment: date author version</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>UserSnippet-Objective-c</string>
 	<key>IDECodeSnippetUserSnippet</key>

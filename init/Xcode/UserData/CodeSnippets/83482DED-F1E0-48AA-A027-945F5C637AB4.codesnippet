@@ -9,8 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSMutableDictionary *map = [NSMutableDictionary dictionary];
-</string>
+	<string>NSMutableDictionary *map = [NSMutableDictionary dictionary];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>83482DED-F1E0-48AA-A027-945F5C637AB4</string>
 	<key>IDECodeSnippetLanguage</key>
