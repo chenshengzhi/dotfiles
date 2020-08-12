@@ -140,6 +140,7 @@ alias gptags='git push origin --tags'
 alias gpo="git push origin"
 alias gmm="git merge master"
 alias gito="git open"
+alias gbdd='git branch --no-color --merged | command grep -vE "^(\+|\*|\s*($(git_main_branch)|development|develop|devel|dev|release|master|beta)\s*$)" | command xargs -n 1 git branch -d'
 
 alias cartuciOS="carthage update --cache-builds --platform iOS"
 
