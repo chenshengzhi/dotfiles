@@ -306,6 +306,7 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export GOPATH="$HOME/go"
+export GOROOT="/usr/local/go"
 
 export GEM_HOME=~/.gem
 export GEM_PATH=~/.gem
