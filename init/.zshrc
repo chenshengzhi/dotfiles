@@ -71,7 +71,6 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source ~/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -311,3 +310,6 @@ export GOROOT="/usr/local/go"
 export GEM_HOME=~/.gem
 export GEM_PATH=~/.gem
 export PATH="$HOME/.gem/bin:$PATH"
+
+
+source ~/.bash_profile
