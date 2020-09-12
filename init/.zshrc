@@ -108,7 +108,7 @@ export PATH="/opt/local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sb
 DEFAULT_USER=`whoami`
 
 ######## alias ########
-alias upzsh="upgrade_oh_my_zsh_custom_plugins && upgrade_oh_my_zsh"
+alias upzsh="upgrade_oh_my_zsh_custom_plugins && omz update"
 
 alias help="run-help"
 
