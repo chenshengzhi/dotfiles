@@ -145,6 +145,7 @@ alias cartuciOS="carthage update --cache-builds --platform iOS"
 
 alias rm='trash -F'
 alias subl='subl -w'
+alias spmdep='xcodebuild -resolvePackageDependencies'
 
 ######## 环境变量 ########
 export SVN_EDITOR=vim
