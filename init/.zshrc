@@ -139,7 +139,6 @@ alias gptags='git push origin --tags'
 alias gpo="git push origin"
 alias gmm="git merge master"
 alias gito="git open"
-alias gbdd='git branch --no-color --merged | command grep -vE "^(\+|\*|\s*($(git_main_branch)|development|develop|devel|dev|release|master|beta)\s*$)" | command xargs -n 1 git branch -d'
 
 alias cartuciOS="carthage update --cache-builds --platform iOS"
 
@@ -299,6 +298,12 @@ function sson() {
 function ssoff() {
     ln -sf ~/.ssh/config-proxy-off ~/.ssh/config
     ln -sf ~/.gitconfig-proxy-off ~/.gitconfig
+}
+
+function gbdd() {
+    git checkout master
+    git fetch --all --prune
+    git branch --merged | egrep -v "(^\*|master|release|beta|develop)" | xargs git branch -d
 }
 
 export NVM_DIR="$HOME/.nvm"
