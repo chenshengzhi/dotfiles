@@ -306,9 +306,6 @@ function gbdd() {
         echo ''
         echo ''
     fi
-    git fetch --all --prune
-    echo ''
-    echo ''
     git pull --prune
     echo ''
     echo ''
