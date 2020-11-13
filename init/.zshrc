@@ -302,10 +302,16 @@ function ssoff() {
 
 function gbdd() {
     if [[ `git symbolic-ref --short HEAD` != 'master' ]]; then
-      git checkout master
+        git checkout master
+        echo ''
+        echo ''
     fi
     git fetch --all --prune
+    echo ''
+    echo ''
     git pull --prune
+    echo ''
+    echo ''
     git branch --merged | egrep -v "(^\*|master|release|beta|develop)" | xargs git branch -d
 }
 
