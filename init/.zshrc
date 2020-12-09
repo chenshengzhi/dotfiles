@@ -133,6 +133,7 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
 alias ss="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;"
+alias clash="export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890"
 
 alias gla="git pull -p"
 alias gptags='git push origin --tags'
