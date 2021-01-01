@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>stgself</string>
+	<string>fixme</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__strong typeof(weakSelf) strongSelf = weakSelf;</string>
+	<string>// FIXME: - &lt;#fixme#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1708C1FE-87C7-4F9A-8240-AF6AF2948BFC</string>
+	<string>2F046ABA-CDA7-4055-9DB5-C074F260BE5A</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>strongSelf</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UserSnippet-Objective-c</string>
+	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
