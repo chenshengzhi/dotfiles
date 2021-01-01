@@ -3,26 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>snpmake</string>
+	<string>snpupdate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#view#&gt;.snp.makeConstraints { make in
+	<string>&lt;#view#&gt;.snp.updateConstraints { make in
             &lt;#code#&gt;
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CEF0A0C1-AAE6-487C-8E47-D51D70FC82DF</string>
+	<string>F4204E60-AAAA-47AA-ACFB-DAB1DC5CFD77</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>SnapKit makeConstraints</string>
+	<string>SnapKit updateConstraints</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>SnapKit makeConstraints</string>
+	<string>SnapKit updateConstraints</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
