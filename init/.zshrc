@@ -278,7 +278,7 @@ function podu() {
 
 function podiu() {
     begin=`date`
-    pod install
+    pod install --repo-update
     echo ""
     echo "begin: $begin"
     echo "end:   `date`"
@@ -286,7 +286,7 @@ function podiu() {
 
 function poduu() {
     begin=`date`
-    pod update
+    pod update --repo-update
     echo ""
     echo "begin: $begin"
     echo "end:   `date`"
