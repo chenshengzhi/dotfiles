@@ -314,6 +314,17 @@ function gbdd() {
     git branch --merged | egrep -v "(^\*|master|release|beta|develop)" | xargs git branch -d
 }
 
+function gbdl() {
+    if [[ `git symbolic-ref --short HEAD` != 'master' ]]; then
+        git checkout master
+        echo ''
+        echo ''
+    fi
+    echo ''
+    echo ''
+    git branch --merged | egrep -v "(^\*|master|release|beta|develop)" | xargs git branch -d
+}
+
 export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.fastlane/bin:$PATH"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
