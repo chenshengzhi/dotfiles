@@ -3,16 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>stgself</string>
+	<string>sss</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__strong typeof(weakSelf) strongSelf = weakSelf;
-if (!strongSelf) {
-    return;
-}</string>
+	<string>__strong typeof(weakSelf) strongSelf = weakSelf;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1708C1FE-87C7-4F9A-8240-AF6AF2948BFC</string>
 	<key>IDECodeSnippetLanguage</key>
