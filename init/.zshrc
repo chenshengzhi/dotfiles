@@ -193,18 +193,28 @@ function psk(){
     esac
 }
 
+function __git_pull_at_path() {
+    if [[ $# == 0 ]]; then
+        echo 'must have path argument'
+    else
+        if [[ -d "${1}/.git" ]]; then
+            echo $1
+            git -C $1 pull
+        fi
+    fi
+}
+
 function upgrade_oh_my_zsh_custom_plugins() {
     oldPath=`pwd`
 
     pluginsPath=~/.oh-my-zsh/custom/plugins
-    builtin cd $pluginsPath
+    for plugin in ${pluginsPath}/*; do
+        __git_pull_at_path ${plugin}
+    done
 
-    for plu in $pluginsPath/*; do
-        echo $plu
-        builtin cd ${plu}
-        if [[ -d ".git" ]]; then
-            git pull
-        fi
+    themesPath=~/.oh-my-zsh/custom/themes
+    for theme in ${themesPath}/*; do
+        __git_pull_at_path ${theme}
     done
 
     builtin cd ${oldPath}
